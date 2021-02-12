@@ -7,9 +7,5 @@ app.use(cors());
 
 gqlRoute(app);
 routeExpress(app);
-app.listen(
-  {
-    port: 4000
-  },
-  () => console.log('Server ready at http://localhost:4000')
-);
+app.listen(process.env.PORT || 4000,
+  () => console.log("Server is running..."));
