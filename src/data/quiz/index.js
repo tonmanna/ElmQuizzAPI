@@ -8,7 +8,7 @@ const getQuiz = () =>
         answer: "",
         mermaid: ``,
         code: `
-                    var x: 5;
+                    var x= 5;
                     const foo = {
                         x: 100,
                         getX() {
@@ -18,7 +18,7 @@ const getQuiz = () =>
                     const bar = {
                         x: 20
                     };
-                    bar.getX: foo.getX;
+                    bar.getX = foo.getX;
                     console.log(bar.getX());
               `,
         markdown: ` 
@@ -64,10 +64,10 @@ const getQuiz = () =>
 
                 let p = +"30"+12;
                 console.log(p)
-                    let x = 1 + "2";
-                    let y = +"30"+0;
-                    let z = x + y;
-                    console.log(z);
+                let x = 1 + "2";
+                let y = +"30"+0;
+                let z = x + y;
+                console.log(z);
                `,
         markdown: `
               `,
@@ -117,7 +117,7 @@ const getQuiz = () =>
         answer: "",
         mermaid: ``,
         code: `
-                    const fruits: ["apple", "banana", "strawberry"];
+                    const fruits = ["apple", "banana", "strawberry"];
                     fruits
                         .filter((fruit)=> fruit.length > 5)
                         .forEach((fruit)=> {
