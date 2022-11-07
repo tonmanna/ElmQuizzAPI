@@ -1,0 +1,15 @@
+<h3>Quiz</h3>
+<%= body.candidateID %>
+    <ul>
+        <% body.title.forEach(function(title,i){ %>
+            <li>
+                <div>
+                    <%= i %> : <%= title %>
+                </div>
+                <p>
+                <h4>คำตอบ: <%= body.answer[i] %>
+                </h4>
+                </p>
+            </li>
+            <% }); %>
+    </ul>
