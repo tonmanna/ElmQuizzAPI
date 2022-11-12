@@ -3,6 +3,8 @@ const getQuiz = () =>
     resolve([
       {
         no: 1,
+        questionType: false,
+        script: "",
         title:
           "หลังจากรันโค้ดต่อไปนี้ สิ่งใดจะพิมพ์ไปบน console และอธิบายตามความเข้าใจ?",
         answer: "",
@@ -26,6 +28,8 @@ const getQuiz = () =>
       },
       {
         no: 2,
+        questionType: false,
+        script: "",
         title:
           "หลังจากรันโค้ดต่อไปนี้ ข้อความใดจะพิมพ์บน console และอธิบายตามความเข้าใจ?",
         answer: "",
@@ -46,6 +50,8 @@ const getQuiz = () =>
       },
       {
         no: 3,
+        questionType: false,
+        script: "",
         title: "ผลลัพธ์ของ 10%5 คืออะไร และอธิบายตามความเข้าใจ?",
         answer: "",
         mermaid: ``,
@@ -57,6 +63,8 @@ const getQuiz = () =>
       },
       {
         no: 4,
+        questionType: false,
+        script: "",
         title: "ค่าของ z คืออะไร และอธิบายตามความเข้าใจ?",
         answer: "",
         mermaid: ``,
@@ -74,6 +82,8 @@ const getQuiz = () =>
       },
       {
         no: 5,
+        questionType: false,
+        script: "",
         title: "คำสั่งใดมีผลทำให้ตัวแปร result เป็นตัวพิมพ์เล็กทั้งหมด  ?",
         answer: "",
         mermaid: ``,
@@ -85,6 +95,8 @@ const getQuiz = () =>
       },
       {
         no: 6,
+        questionType: false,
+        script: "",
         title: "คำสั่งที่ใช้สำหรับการขึ้นบรรทัดใหม่ในสตริง?[TS,JS]",
         answer: "",
         mermaid: ``,
@@ -95,6 +107,8 @@ const getQuiz = () =>
       },
       {
         no: 7,
+        questionType: false,
+        script: "",
         title:
           "หลังจากรันโค้ดต่อไปนี้ ข้อความใดจะพิมพ์บน console และอธิบายตามความเข้าใจ?",
         answer: "",
@@ -112,6 +126,8 @@ const getQuiz = () =>
       },
       {
         no: 8,
+        questionType: false,
+        script: "",
         title:
           "หลังจากรันโค้ดต่อไปนี้ ข้อความใดจะพิมพ์บน console และอธิบายตามความเข้าใจ?",
         answer: "",
@@ -129,6 +145,8 @@ const getQuiz = () =>
       },
       {
         no: 9,
+        questionType: false,
+        script: "",
         title:
           "คำสั่งใด ทำให้สามารถพิมพ์ชื่อและนามสกุลไปที่ console ได้ และอธิบายตามความเข้าใจ?",
         answer: "",
@@ -147,6 +165,8 @@ const getQuiz = () =>
       },
       {
         no: 10,
+        questionType: false,
+        script: "",
         title: "จงอธิบายการทำงานของ async , await function ของ JAVASCRIPT",
         answer: "",
         mermaid: ``,
@@ -163,6 +183,8 @@ const getQuiz = () =>
       },
       {
         no: 11,
+        questionType: false,
+        script: "",
         title: "ค่าของ x และ y คืออะไร และอธิบายตามความเข้าใจ?",
         answer: "",
         mermaid: ``,
@@ -174,6 +196,8 @@ const getQuiz = () =>
       },
       {
         no: 12,
+        questionType: true,
+        script: "",
         title: "จงสร้าง Code ตาม Class Diagram นี้",
         answer: "",
         mermaid: `classDiagram

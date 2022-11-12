@@ -7,9 +7,17 @@
                     <%= i+1 %> : <%= title %>
                 </div>
                 <p>
-                <h4>คำตอบ: <%= body.answer[i] %>
+                <h4>คำตอบ:
+                    <div>
+                        <%- body.answer[i] %>
+                    </div>
                 </h4>
                 </p>
+                <h4>Script:
+                    <div>
+                        <%- body.script[i] %>
+                    </div>
+                </h4>
             </li>
             <% }); %>
     </ul>

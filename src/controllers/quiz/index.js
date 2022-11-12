@@ -2,6 +2,7 @@ const { getQuiz, submitQuiz } = require("../../services/quiz");
 const { graphQLHandler } = require("../graphql-handler");
 const { expressHandler } = require("../express-handler");
 const { validateResponseQuiz } = require("../../schema/quiz");
+
 const ejs = require("ejs");
 const fs = require("fs");
 
@@ -14,10 +15,23 @@ const getQuizExpressHandler = async (req, res) => {
 
 const submitQuizExpressHandler = async (req, res) => {
   const contentFile = fs.readFileSync("./mail.ejs").toString();
+
+  req.body.answer.map((value, index) => {
+    let text = value.replace(new RegExp("\r?\n", "g"), "<br />");
+    text = text.replace(new RegExp("  ", "g"), "&nbsp;");
+    req.body.answer[index] = text;
+    return value;
+  });
+  req.body.script.map((value, index) => {
+    let text = value.replace(new RegExp("\r?\n", "g"), "<br />");
+    text = text.replace(new RegExp("  ", "g"), "&nbsp;");
+    req.body.script[index] = text;
+    return value;
+  });
   const content = ejs.render(contentFile, {
     body: req.body,
   });
-  return await submitQuiz(content, req.body.cadidateID);
+  return await submitQuiz(content, req.body.candidateID);
 };
 
 const resolver = {
