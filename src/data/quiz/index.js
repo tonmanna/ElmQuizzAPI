@@ -224,6 +224,63 @@ const getQuiz = () =>
         code: ``,
         markdown: `##### Code เป็นภาษาอะไรก็ได้ในสามตัวเลือก TS, Java , C#`,
       },
+      {
+        no: 13,
+        questionType: false,
+        script: "",
+        title: `ช่วยอธิบายในมุมมองการสร้าง Software ให้สามารถดูแลได้ในระยะยาว`,
+        answer: "",
+        mermaid: ``,
+        code: ``,
+        markdown: `อธิบายตามความเข้าใจ`,
+      },
+      {
+        no: 14,
+        questionType: true,
+        script: "",
+        title: `จงเขียนโปรแกรม เพื่อนำค่า Array ให้เหลือเพียงตัวที่ไม่ซ้ำกัน เช่น จาก [1,2,3,4,5,1,12,13,14,15] จะได้ [2,3,4,5,12,13,14,15]`,
+        answer: "",
+        mermaid: ``,
+        code: ``,
+        markdown: `
+          const array = [1,2,3,4,5,1,12,13,14,15]
+        `,
+      },
+      {
+        no: 15,
+        questionType: true,
+        script: ``,
+        title: `จงเขียนโปรแกรมเพื่อให้้สามารถ แสดงผลรวมของ Value ใน Linked List จากโครงสร้างตัวอย่าง และแสดงค่าออกมาทุกครั้งที่มีการ`,
+        answer: "",
+        mermaid: `
+          graph TD;
+            11-->19;
+            19-->32;
+            32-->64;
+            64-->128;
+        `,
+        code: ``,
+        markdown: `
+          const LinkedList = [
+            {
+              value: '11',
+              id: 1,
+              next_id: 2
+            },
+            {
+              value: '19',
+              id: 2,
+              next_id: 3
+            },
+            {
+              value: '32',
+              id: 3,
+              next_id: 4
+            },            
+            .........
+          ]
+        `,
+      },
     ]);
   });
 
