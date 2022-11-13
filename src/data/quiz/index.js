@@ -114,7 +114,7 @@ const getQuiz = () =>
         answer: "",
         mermaid: ``,
         code: `
-                    const fruits: ["apple", "banana", "strawberry"];
+                    const fruits = ["apple", "banana", "strawberry"];
                     fruits
                         .map((fruit)=> "amazing " + fruit)
                         .forEach((fruit)=> {
@@ -171,12 +171,17 @@ const getQuiz = () =>
         answer: "",
         mermaid: ``,
         code: `
-                    async function asyncJob() {
-                        console.log("Fetching");
-                        await fetchUserData();
-                        console.log("Fetched");
-                    }
-                    await asyncJob();
+async function getData(){
+  setTimeout(()=>{
+    console.log("DATA")
+  },1000);
+}        
+async function asyncJob() {
+    console.log("Fetching");
+    await getData();
+    console.log("Fetched");
+}
+await asyncJob();
                `,
         markdown: `
                 `,
@@ -222,7 +227,7 @@ const getQuiz = () =>
                     run()
                 }`,
         code: ``,
-        markdown: `##### Code เป็นภาษาอะไรก็ได้ในสามตัวเลือก TS, Java , C#`,
+        markdown: `##### เขียน Code ด้วย JavaScript`,
       },
       {
         no: 13,
@@ -250,35 +255,34 @@ const getQuiz = () =>
         no: 15,
         questionType: true,
         script: ``,
-        title: `จงเขียนโปรแกรมเพื่อให้้สามารถ แสดงผลรวมของ Value ใน Linked List จากโครงสร้างตัวอย่าง และแสดงค่าออกมาทุกครั้งที่มีการ`,
+        title: `จงเขียนโปรแกรมเพื่อให้สามารถ แสดงผลรวมของ Value ใน Linked List จากโครงสร้างตัวอย่าง และแสดงค่าออกมาทุกครั้งที่มีการ`,
         answer: "",
-        mermaid: `
-          graph TD;
+        mermaid: `graph LR;
             11-->19;
             19-->32;
             32-->64;
             64-->128;
         `,
-        code: ``,
+        code: `const LinkedList = [
+{
+  value: '11',
+  id: 1,
+  next_id: 2
+},
+{
+  value: '19',
+  id: 2,
+  next_id: 3
+},
+{
+  value: '32',
+  id: 3,
+  next_id: 4
+},            
+.........
+]`,
         markdown: `
-          const LinkedList = [
-            {
-              value: '11',
-              id: 1,
-              next_id: 2
-            },
-            {
-              value: '19',
-              id: 2,
-              next_id: 3
-            },
-            {
-              value: '32',
-              id: 3,
-              next_id: 4
-            },            
-            .........
-          ]
+          
         `,
       },
     ]);
