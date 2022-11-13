@@ -82,7 +82,7 @@ const getQuiz = () =>
       },
       {
         no: 5,
-        questionType: false,
+        questionType: true,
         script: "",
         title: "คำสั่งใดมีผลทำให้ตัวแปร result เป็นตัวพิมพ์เล็กทั้งหมด  ?",
         answer: "",
@@ -95,7 +95,7 @@ const getQuiz = () =>
       },
       {
         no: 6,
-        questionType: false,
+        questionType: true,
         script: "",
         title: "คำสั่งที่ใช้สำหรับการขึ้นบรรทัดใหม่ในสตริง?[TS,JS]",
         answer: "",
