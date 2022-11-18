@@ -2,54 +2,6 @@ const getQuiz = () =>
   new Promise((resolve) => {
     resolve([
       {
-        no: 1,
-        questionType: false,
-        script: "",
-        title:
-          "หลังจากรันโค้ดต่อไปนี้ สิ่งใดจะพิมพ์ไปบน console และอธิบายตามความเข้าใจ?",
-        answer: "",
-        mermaid: ``,
-        code: `
-                    var x= 5;
-                    const foo = {
-                        x: 100,
-                        getX() {
-                            return this.x;
-                        }
-                    };
-                    const bar = {
-                        x: 20
-                    };
-                    bar.getX = foo.getX;
-                    console.log(bar.getX());
-              `,
-        markdown: ` 
-              `,
-      },
-      {
-        no: 2,
-        questionType: false,
-        script: "",
-        title:
-          "หลังจากรันโค้ดต่อไปนี้ ข้อความใดจะพิมพ์บน console และอธิบายตามความเข้าใจ?",
-        answer: "",
-        mermaid: ``,
-        code: `
-                    const basket = {
-                        apple: 2,
-                        banana: 4,
-                        orange: 6,
-                        strawberry: 8
-                    }
-                    for (const fruit in basket) {
-                        console.log(fruit);
-                    }
-               `,
-        markdown: ` 
-               `,
-      },
-      {
-        no: 3,
         questionType: false,
         script: "",
         title: "ผลลัพธ์ของ 10%5 คืออะไร และอธิบายตามความเข้าใจ?",
@@ -62,10 +14,10 @@ const getQuiz = () =>
                `,
       },
       {
-        no: 4,
         questionType: false,
         script: "",
-        title: "ค่าของ z คืออะไร และอธิบายตามความเข้าใจ?",
+        title:
+          "หลังจากรันคำสั่งด่านล่างนี้ค่าของ z มีค่าเป็นอะไรและอธิบายตามความเข้าใจของสิ่งที่เกิดขึ้น?",
         answer: "",
         mermaid: ``,
         code: `
@@ -81,10 +33,10 @@ const getQuiz = () =>
               `,
       },
       {
-        no: 5,
         questionType: true,
         script: "",
-        title: "คำสั่งใดมีผลทำให้ตัวแปร result เป็นตัวพิมพ์เล็กทั้งหมด  ?",
+        title:
+          "เขียนโปรแกรมที่คิดว่า ซับซ้อนที่สุด ที่จะทำให้ตัวแปร result เป็นตัวพิมพ์เล็กทั้งหมด?",
         answer: "",
         mermaid: ``,
         code: `
@@ -94,38 +46,6 @@ const getQuiz = () =>
                `,
       },
       {
-        no: 6,
-        questionType: true,
-        script: "",
-        title: "คำสั่งที่ใช้สำหรับการขึ้นบรรทัดใหม่ในสตริง?[TS,JS]",
-        answer: "",
-        mermaid: ``,
-        code: `
-               `,
-        markdown: `
-               `,
-      },
-      {
-        no: 7,
-        questionType: false,
-        script: "",
-        title:
-          "หลังจากรันโค้ดต่อไปนี้ ข้อความใดจะพิมพ์บน console และอธิบายตามความเข้าใจ?",
-        answer: "",
-        mermaid: ``,
-        code: `
-                    const fruits = ["apple", "banana", "strawberry"];
-                    fruits
-                        .map((fruit)=> "amazing " + fruit)
-                        .forEach((fruit)=> {
-                            console.log(fruit);
-                        })
-               `,
-        markdown: `
-               `,
-      },
-      {
-        no: 8,
         questionType: false,
         script: "",
         title:
@@ -144,8 +64,7 @@ const getQuiz = () =>
                `,
       },
       {
-        no: 9,
-        questionType: false,
+        questionType: true,
         script: "",
         title:
           "คำสั่งใด ทำให้สามารถพิมพ์ชื่อและนามสกุลไปที่ console ได้ และอธิบายตามความเข้าใจ?",
@@ -164,17 +83,18 @@ const getQuiz = () =>
                 `,
       },
       {
-        no: 10,
         questionType: false,
         script: "",
-        title: "จงอธิบายการทำงานของ async , await function ของ JAVASCRIPT",
+        title: "จงอธิบายการหลักทำงานของ async , await function ของ JAVASCRIPT",
         answer: "",
         mermaid: ``,
         code: `
 async function getData(){
-  setTimeout(()=>{
-    console.log("DATA")
-  },1000);
+  return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+      resolve("DATA");
+    },1000);
+  });
 }        
 async function asyncJob() {
     console.log("Fetching");
@@ -187,20 +107,6 @@ await asyncJob();
                 `,
       },
       {
-        no: 11,
-        questionType: false,
-        script: "",
-        title: "ค่าของ x และ y คืออะไร และอธิบายตามความเข้าใจ?",
-        answer: "",
-        mermaid: ``,
-        code: `
-                    let x,[y,z] = [36,1];
-               `,
-        markdown: `
-               `,
-      },
-      {
-        no: 12,
         questionType: true,
         script: "",
         title: "จงสร้าง Code ตาม Class Diagram นี้",
@@ -227,37 +133,32 @@ await asyncJob();
                     run()
                 }`,
         code: ``,
-        markdown: `##### เขียน Code ด้วย JavaScript`,
+        markdown: `##### เขียน Code ด้วย JavaScript,C#,Java หรือ Python ตามที่คุณสะดวก`,
       },
       {
-        no: 13,
         questionType: false,
         script: "",
         title: `ช่วยอธิบายในมุมมองการสร้าง Software ให้สามารถดูแลได้ในระยะยาว`,
         answer: "",
         mermaid: ``,
         code: ``,
-        markdown: `อธิบายตามความเข้าใจ`,
+        markdown: `###อธิบายตามความเข้าใจ`,
       },
       {
-        no: 14,
         questionType: true,
         script: "",
-        title: `จงเขียนโปรแกรม เพื่อนำค่าจาก Array ให้เหลือเพียงตัวที่ไม่ซ้ำกัน โดยข้อมูล
-         จาก [1,2,13,4,15,1,12,3,14,5] 
-         จากนั้นทำการเรียงลำดับจากน้อยไปมาก จะได้ผลลัพธ์ [2,3,4,5,12,13,14,15]`,
+        title: `จงเขียนโปรแกรม เพื่อนำค่าจาก Array ให้เหลือเพียงตัวที่ไม่ซ้ำกัน โดยถ้าหากมีเลขที่ซ้ำกัน ให้นำเลขนั้นออกจากรายการ โดยข้อมูล
+         จาก [1,2,13,4,15,1,12,3,14,5] จากนั้นทำการเรียงลำดับจากน้อยไปมาก [2,3,4,5,12,13,14,15]`,
         answer: "",
         mermaid: ``,
-        code: ``,
-        markdown: `
-          const array = [1,2,3,4,5,1,12,13,14,15]
-        `,
+        code: `
+          const array = [1,2,3,4,5,1,12,13,14,15]`,
+        markdown: ``,
       },
       {
-        no: 15,
         questionType: true,
         script: ``,
-        title: `จงเขียนโปรแกรมเพื่อให้สามารถ แสดงผลรวมของ Value ใน Linked List จากโครงสร้างตัวอย่าง.`,
+        title: `จงเขียนโปรแกรมจากโครงสร้างตัวอย่าง โดยใช้หลักการของ Linked List ในการหาผลรวมของ value.`,
         answer: "",
         mermaid: `graph LR;
             11-->19;
