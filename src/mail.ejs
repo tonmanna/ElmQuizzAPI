@@ -1,23 +1,28 @@
 <h3>Quiz</h3>
-<%= body.candidateID %>
-    <ul>
-        <% body.title.forEach(function(title,i){ %>
-            <li>
+<h4>
+    <%= body.candidateID %>
+</h4>
+<h4>
+    <%= body.startDate %>
+</h4>
+<ul>
+    <% body.title.forEach(function(title,i){ %>
+        <li>
+            <div>
+                <%= i+1 %> : <%= title %>
+            </div>
+            <p>
+            <h4>คำตอบ:
                 <div>
-                    <%= i+1 %> : <%= title %>
+                    <%- body.answer[i] %>
                 </div>
-                <p>
-                <h4>คำตอบ:
-                    <div>
-                        <%- body.answer[i] %>
-                    </div>
-                </h4>
-                </p>
-                <h4>Script:
-                    <div>
-                        <%- body.script[i] %>
-                    </div>
-                </h4>
-            </li>
-            <% }); %>
-    </ul>
+            </h4>
+            </p>
+            <h4>Script:
+                <div>
+                    <%- body.script[i] %>
+                </div>
+            </h4>
+        </li>
+        <% }); %>
+</ul>
