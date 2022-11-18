@@ -1,7 +1,9 @@
 const getQuiz = () =>
   new Promise((resolve) => {
+    let index = 1;
     resolve([
       {
+        no: index++,
         questionType: false,
         script: "",
         title: "ผลลัพธ์ของ 10%5 คืออะไร และอธิบายตามความเข้าใจ?",
@@ -14,6 +16,7 @@ const getQuiz = () =>
                `,
       },
       {
+        no: index++,
         questionType: false,
         script: "",
         title:
@@ -33,6 +36,7 @@ const getQuiz = () =>
               `,
       },
       {
+        no: index++,
         questionType: true,
         script: "",
         title:
@@ -46,6 +50,7 @@ const getQuiz = () =>
                `,
       },
       {
+        no: index++,
         questionType: false,
         script: "",
         title:
@@ -64,6 +69,7 @@ const getQuiz = () =>
                `,
       },
       {
+        no: index++,
         questionType: true,
         script: "",
         title:
@@ -83,6 +89,7 @@ const getQuiz = () =>
                 `,
       },
       {
+        no: index++,
         questionType: false,
         script: "",
         title: "จงอธิบายการหลักทำงานของ async , await function ของ JAVASCRIPT",
@@ -107,6 +114,7 @@ await asyncJob();
                 `,
       },
       {
+        no: index++,
         questionType: true,
         script: "",
         title: "จงสร้าง Code ตาม Class Diagram นี้",
@@ -136,6 +144,7 @@ await asyncJob();
         markdown: `##### เขียน Code ด้วย JavaScript,C#,Java หรือ Python ตามที่คุณสะดวก`,
       },
       {
+        no: index++,
         questionType: false,
         script: "",
         title: `ช่วยอธิบายในมุมมองการสร้าง Software ให้สามารถดูแลได้ในระยะยาว`,
@@ -145,6 +154,7 @@ await asyncJob();
         markdown: `###อธิบายตามความเข้าใจ`,
       },
       {
+        no: index++,
         questionType: true,
         script: "",
         title: `จงเขียนโปรแกรม เพื่อนำค่าจาก Array ให้เหลือเพียงตัวที่ไม่ซ้ำกัน โดยถ้าหากมีเลขที่ซ้ำกัน ให้นำเลขนั้นออกจากรายการ โดยข้อมูล
@@ -156,6 +166,7 @@ await asyncJob();
         markdown: ``,
       },
       {
+        no: index++,
         questionType: true,
         script: ``,
         title: `จงเขียนโปรแกรมจากโครงสร้างตัวอย่าง โดยใช้หลักการของ Linked List ในการหาผลรวมของ value.`,
