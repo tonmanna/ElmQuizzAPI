@@ -67,27 +67,7 @@ const getQuiz = () =>
                `,
         markdown: `
                `,
-      },
-      {
-        no: index++,
-        questionType: true,
-        script: "",
-        title:
-          "คำสั่งใด ทำให้สามารถพิมพ์ชื่อและนามสกุลไปที่ console ได้ และอธิบายตามความเข้าใจ?",
-        answer: "",
-        mermaid: ``,
-        code: `
-                    let person = {
-                        firstName: "Worawut",
-                        lastName: "Boonton",
-                        fullName: function() {
-                            return this.firstName + " " + this.lastName;
-                        }
-                    };
-                `,
-        markdown: `
-                `,
-      },
+      }ม
       {
         no: index++,
         questionType: false,
@@ -157,12 +137,12 @@ await asyncJob();
         no: index++,
         questionType: true,
         script: "",
-        title: `จงเขียนโปรแกรม เพื่อนำค่าจาก Array ให้เหลือเพียงตัวที่ไม่ซ้ำกัน โดยถ้าหากมีเลขที่ซ้ำกัน ให้นำเลขนั้นออกจากรายการ โดยข้อมูล
-         จาก [1,2,13,4,15,1,12,3,14,5] จากนั้นทำการเรียงลำดับจากน้อยไปมาก [2,3,4,5,12,13,14,15]`,
+        title: `จงเขียนโปรแกรม เพื่อนำค่าจาก Array ให้เหลือเพียงตัวที่ไม่ซ้ำกัน โดยถ้าหากมีเลขที่ซ้ำกัน ให้นำเลขนั้นออกจากรายการ จากข้อมูลตัวอย่าง
+         จาก [1,2,13,4,15,1,12,3,14,5] จากนั้นทำการเรียงลำดับจากน้อยไปมากจะได้ผลลัพธ์คำตอบ [2,3,4,5,12,13,14,15]`,
         answer: "",
         mermaid: ``,
         code: `
-          const array = [1,2,3,4,5,1,12,13,14,15]`,
+          const array = [1,2,13,4,15,1,12,3,14,5] // Example Data`,
         markdown: ``,
       },
       {
