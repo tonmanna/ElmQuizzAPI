@@ -6,11 +6,11 @@ const getQuiz = () =>
         no: index++,
         questionType: false,
         script: "",
-        title: "ผลลัพธ์ของ 10%5 คืออะไร และอธิบายตามความเข้าใจ?",
+        title: "ผลลัพธ์ของสมการด้านล่าง คืออะไรอธิบายตามหลักคณิตศาสตร์?",
         answer: "",
         mermaid: ``,
         code: `
-                    var result =  10%5;
+                    var result =  10%5+2*2-1;
                `,
         markdown: `
                `,
@@ -67,7 +67,7 @@ const getQuiz = () =>
                `,
         markdown: `
                `,
-      }ม
+      },
       {
         no: index++,
         questionType: false,
@@ -128,6 +128,16 @@ await asyncJob();
         questionType: false,
         script: "",
         title: `ช่วยอธิบายในมุมมองการสร้าง Software ให้สามารถดูแลได้ในระยะยาว`,
+        answer: "",
+        mermaid: ``,
+        code: ``,
+        markdown: `###อธิบายตามความเข้าใจ`,
+      },
+      {
+        no: index++,
+        questionType: false,
+        script: "",
+        title: `คุณเคยอ่านเอกสาร เกี่ยวกับการพัฒนา Software เรื่องอะไรล่าสุด (ระหว่างเรียนหรือหลังจากเรียนก็ได้)`,
         answer: "",
         mermaid: ``,
         code: ``,
