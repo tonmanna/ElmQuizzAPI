@@ -72,7 +72,8 @@ const getQuiz = () =>
         no: index++,
         questionType: false,
         script: "",
-        title: "จงอธิบายการหลักทำงานของ async , await function ของ JAVASCRIPT",
+        title:
+          "จงอธิบายการหลักทำงานของ async , await function ของ JAVASCRIPT ว่าทำงานอย่างไร?",
         answer: "",
         mermaid: ``,
         code: `
@@ -141,7 +142,7 @@ await asyncJob();
         answer: "",
         mermaid: ``,
         code: ``,
-        markdown: `###อธิบายตามความเข้าใจ`,
+        markdown: `และอธิบายตามความเข้าใจ ที่คุณได้อ่านเรื่องนั้นมาว่ามันเกี่ยวกับอะไรแ`,
       },
       {
         no: index++,
@@ -151,11 +152,14 @@ await asyncJob();
         answer: "",
 
         mermaid: ``,
-        code: `function getBase5Number(number) {
-    // Write your code here
+        code: `
+        function getBase5Number(number) {
+          // Write your code here
         }
-        if(getBase5Number(10) === 20){
-          console.log("TRUE");
+        if(getBase5Number(13) === 23){
+          console.log("SUCCESS");
+        }else{
+          console.log("FAILED");
         }
         `,
         markdown: `อาจแสดงการทดสอบผ่าน console.log ได้ และทดสอบกำเลขฐาน 10 อื่นๆ ได้`,
