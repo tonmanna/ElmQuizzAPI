@@ -147,13 +147,18 @@ await asyncJob();
         no: index++,
         questionType: true,
         script: "",
-        title: `จงเขียนโปรแกรม เพื่อนำค่าจาก Array ให้เหลือเพียงตัวที่ไม่ซ้ำกัน โดยถ้าหากมีเลขที่ซ้ำกัน ให้นำเลขนั้นออกจากรายการ จากข้อมูลตัวอย่าง
-         จาก [1,2,13,4,15,1,12,3,14,5] จากนั้นทำการเรียงลำดับจากน้อยไปมากจะได้ผลลัพธ์คำตอบ [2,3,4,5,12,13,14,15]`,
+        title: `จงเขียนโปรแกรม เพื่อนำเลขฐาน  10 มาแปลงเป็น ฐาน 5 หลังจาก เรียกคำสั่งนี้ผลลัพธ์จะเป็น ตามสมการนี้ (getBase5Number(13) === 23) === true`,
         answer: "",
+
         mermaid: ``,
-        code: `
-          const array = [1,2,13,4,15,1,12,3,14,5] // Example Data`,
-        markdown: ``,
+        code: `function getBase5Number(number) {
+    // Write your code here
+        }
+        if(getBase5Number(10) === 20){
+          console.log("TRUE");
+        }
+        `,
+        markdown: `อาจแสดงการทดสอบผ่าน console.log ได้ และทดสอบกำเลขฐาน 10 อื่นๆ ได้`,
       },
       {
         no: index++,
