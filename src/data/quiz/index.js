@@ -17,26 +17,6 @@ const getQuiz = () =>
       },
       {
         no: index++,
-        questionType: false,
-        script: "",
-        title:
-          "หลังจากรันคำสั่งด่านล่างนี้ค่าของ z มีค่าเป็นอะไรและอธิบายตามความเข้าใจของสิ่งที่เกิดขึ้น?",
-        answer: "",
-        mermaid: ``,
-        code: `
-
-                let p = +"30"+12;
-                console.log(p)
-                let x = 1 + "2";
-                let y = +"30"+0;
-                let z = x + y;
-                console.log(z);
-               `,
-        markdown: `
-              `,
-      },
-      {
-        no: index++,
         questionType: true,
         script: "",
         title:
@@ -45,25 +25,6 @@ const getQuiz = () =>
         mermaid: ``,
         code: `
                     let result = 'Hello World';
-               `,
-        markdown: `
-               `,
-      },
-      {
-        no: index++,
-        questionType: false,
-        script: "",
-        title:
-          "หลังจากรันโค้ดต่อไปนี้ ข้อความใดจะพิมพ์บน console และอธิบายตามความเข้าใจ?",
-        answer: "",
-        mermaid: ``,
-        code: `
-                    const fruits = ["apple", "banana", "strawberry"];
-                    fruits
-                        .filter((fruit)=> fruit.length > 5)
-                        .forEach((fruit)=> {
-                            console.log(fruit);
-                        })
                `,
         markdown: `
                `,
@@ -122,7 +83,7 @@ await asyncJob();
                     run()
                 }`,
         code: ``,
-        markdown: `##### เขียน Code ด้วย JavaScript,C#,Java หรือ Python ตามที่คุณสะดวก`,
+        markdown: `##### เขียน Code ด้วย JavaScript,C#,Java หรือ Python ภาษาตามที่คุณสะดวก`,
       },
       {
         no: index++,
@@ -143,26 +104,6 @@ await asyncJob();
         mermaid: ``,
         code: ``,
         markdown: `และอธิบายตามความเข้าใจ ที่คุณได้อ่านเรื่องนั้นมาว่ามันเกี่ยวกับอะไร`,
-      },
-      {
-        no: index++,
-        questionType: true,
-        script: "",
-        title: `จงเขียนโปรแกรม เพื่อนำเลขฐาน  10 มาแปลงเป็น ฐาน 5 หลังจาก เรียกคำสั่งนี้ผลลัพธ์จะเป็น ตามสมการนี้ (getBase5Number(13) === 23) === true`,
-        answer: "",
-
-        mermaid: ``,
-        code: `
-        function getBase5Number(number) {
-          // Write your code here
-        }
-        if(getBase5Number(13) === 23){
-          console.log("SUCCESS");
-        }else{
-          console.log("FAILED");
-        }
-        `,
-        markdown: `อาจแสดงการทดสอบผ่าน console.log ได้ และทดสอบกำเลขฐาน 10 อื่นๆ ได้`,
       },
       {
         no: index++,
@@ -197,6 +138,30 @@ await asyncJob();
         markdown: `
           
         `,
+      },
+      {
+        no: index++,
+        questionType: true,
+        script: "",
+        title: `เขียนโปรแกรมเพื่อทำงานตาม Flowchart นี้`,
+        answer: "",
+        mermaid: `flowchart TD
+    A[Customer] -->|Pay money| B(Company Staff)
+    B --> C{Match Price}
+    C -->|<1000USD| D[Laptop]
+    C -->|=1000USD| E[iPhone]
+    C -->|>1000USD| F[fa:fa-car Car]
+    D -->|30USD Fixed cost| H[Packaging]
+    E -->|40USD Fixed cost| H[Packaging]
+    F -->|50USD Fixed cost| H[Packaging]
+    D -->|30USD Fixed cost| G[Shipping]
+    E -->|40USD Fixed cost| G[Shipping]
+    F -->|50USD Fixed cost| G[Shipping]
+    H -->|Pacakging Cost| I[Final Cost]
+    G -->|Logistic Cost| I[Final Cost]
+  `,
+        code: ``,
+        markdown: ``,
       },
     ]);
   });
