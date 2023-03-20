@@ -8,6 +8,7 @@ const getQuiz = () =>
         script: "",
         title: "ผลลัพธ์ของสมการด้านล่าง คืออะไรอธิบายตามหลักคณิตศาสตร์?",
         answer: "",
+        language: "",
         mermaid: ``,
         code: `
                     var result =  10%5+2*2-1;
@@ -21,6 +22,7 @@ const getQuiz = () =>
         script: "",
         title: "จงสร้าง Code ตาม Class Diagram นี้",
         answer: "",
+        language: "",
         mermaid: `classDiagram
                 Animal <|-- Duck
                 Animal <|-- Fish
@@ -51,6 +53,7 @@ const getQuiz = () =>
         script: "",
         title: `ช่วยอธิบายในมุมมองการสร้าง Software ให้สามารถดูแลได้ในระยะยาว`,
         answer: "",
+        language: "",
         mermaid: ``,
         code: ``,
         markdown: `###อธิบายตามความเข้าใจ`,
@@ -61,6 +64,7 @@ const getQuiz = () =>
         script: "",
         title: `คุณเคยอ่านเอกสาร เกี่ยวกับการพัฒนา Software เรื่องอะไรล่าสุด (ระหว่างเรียนหรือหลังจากเรียนก็ได้)`,
         answer: "",
+        language: "",
         mermaid: ``,
         code: ``,
         markdown: `และอธิบายตามความเข้าใจ ที่คุณได้อ่านเรื่องนั้นมาว่ามันเกี่ยวกับอะไร`,
@@ -71,6 +75,7 @@ const getQuiz = () =>
         script: ``,
         title: `จงเขียนโปรแกรมจากโครงสร้างตัวอย่าง โดยใช้หลักการของ Linked List ในการหาผลรวมของ value.`,
         answer: "",
+        language: "javascript",
         mermaid: `graph LR;
             11-->19;
             19-->32;
@@ -93,25 +98,39 @@ const getQuiz = () =>
         no: index++,
         questionType: true,
         script: "",
-        title: `เขียนโปรแกรมเพื่อทำงานตาม Flowchart นี้`,
+        title: `เขียนโปรแกรมเพื่อทำงานตาม Flowchart นี้เพื่อหามูลค่าของกำนัลที่ลูกค้าควรจะได้รับ และพนักงานสามารถแจ้ง มูลค่าของ Gift Voucher และ Special Offer ได้`,
         answer: "",
+        language: "javascript",
         mermaid: `flowchart TD
     A[Customer] -->|Pay_money as Number| B(Company Staff)
     B --> C{Calculate Price}
-    C -->|<1000USD| D[Laptop]
-    C -->|=1000USD| E[iPhone]
-    C -->|>1000USD| F[fa:fa-car Car]
-    D -->|30USD Fixed cost| H[Packaging]
-    E -->|40USD Fixed cost| H[Packaging]
-    F -->|50USD Fixed cost| H[Packaging]
-    D -->|30USD Fixed cost| G[Shipping]
-    E -->|40USD Fixed cost| G[Shipping]
-    F -->|50USD Fixed cost| G[Shipping]
-    H -->|Packaging Cost| I[Result Cost]
-    G -->|Logistic Cost| I[Result Cost]
+    C -->|<1000USD| D[Standard]
+    C -->|>=1000<=1200USD| E[Luxury]
+    C -->|>1200USD| F[Emerald]
+    D -->|30USD| H[Give Voucher]
+    E -->|40USD| H[Give Voucher]
+    F -->|50USD| H[Give Voucher]
+    D -->|30USD| G[Special Offer]
+    E -->|40USD| G[Special Offer]
+    F -->|50USD| G[Special Offer]
+    H -->|Give Voucher| I[Result Value]
+    G -->|Special Offer| I[Result Value]
   `,
         code: ``,
         markdown: ``,
+      },
+      {
+        no: index++,
+        questionType: true,
+        script: "",
+        title: `จากรูปตัวอย่างด้านล่าง จงเขียน HTML และ CSS ให้เป็นตามรูปตัวอย่างโดยใช้ Flexbox หรือ Grid ในการจัดวาง`,
+        answer: "",
+        language: "html",
+        mermaid: `flowchart TD
+
+  `,
+        code: ``,
+        markdown: `![image info](https://i.ibb.co/ck2097n/image.png)`,
       },
     ]);
   });
