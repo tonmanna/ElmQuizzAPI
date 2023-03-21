@@ -15,7 +15,6 @@ const getQuizExpressHandler = async (req, res) => {
 
 const submitQuizExpressHandler = async (req, res) => {
   const contentFile = fs.readFileSync("./mail.ejs").toString();
-
   req.body.answer.map((value, index) => {
     let text = value.replace(new RegExp("\r?\n", "g"), "<br />");
     text = text.replace(new RegExp("  ", "g"), "&nbsp;");
