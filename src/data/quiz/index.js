@@ -6,7 +6,7 @@ const getQuiz = () =>
         no: index++,
         questionType: false,
         script: "",
-        title: "ผลลัพธ์ของสมการด้านล่าง คืออะไรอธิบายตามหลักคณิตศาสตร์?",
+        title: "ผลลัพธ์ของสมการด้านล่าง คืออะไร? (อธิบายตามหลักคณิตศาสตร์)",
         answer: "",
         language: "",
         mermaid: ``,
@@ -20,7 +20,7 @@ const getQuiz = () =>
         no: index++,
         questionType: true,
         script: "",
-        title: "จงสร้าง Code ตาม Class Diagram นี้",
+        title: "สร้าง Code ตาม Class Diagram นี้",
         answer: "",
         language: "typescript",
         mermaid: `classDiagram
@@ -73,7 +73,7 @@ const getQuiz = () =>
         no: index++,
         questionType: true,
         script: ``,
-        title: `จงเขียนโปรแกรมจากโครงสร้างตัวอย่าง โดยใช้หลักการของ Linked List ในการหาผลรวมของ value.`,
+        title: `เขียน Function โปรแกรมจากโครงสร้างตัวอย่าง โดยใช้หลักการของ Linked List ในการหาผลรวมของ Value ในแต่ล่ะ Node.`,
         answer: "",
         language: "typescript",
         mermaid: `graph LR;
@@ -121,7 +121,7 @@ const getQuiz = () =>
         no: index++,
         questionType: true,
         script: "",
-        title: `จากรูปตัวอย่างด้านล่าง จงเขียน HTML และ CSS ให้เป็นตามรูปตัวอย่างโดยใช้ Flexbox หรือ Grid ในการจัดวาง`,
+        title: `จากรูปตัวอย่างด้านล่างให้เขียน HTML และ CSS ให้เป็นตามรูปตัวอย่างโดยใช้ Flexbox หรือ Grid ในการจัดวาง`,
         answer: "",
         language: "html",
         mermaid: `flowchart TD
