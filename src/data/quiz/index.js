@@ -22,7 +22,7 @@ const getQuiz = () =>
         script: "",
         title: "จงสร้าง Code ตาม Class Diagram นี้",
         answer: "",
-        language: "",
+        language: "typescript",
         mermaid: `classDiagram
                 Animal <|-- Duck
                 Animal <|-- Fish
@@ -45,7 +45,7 @@ const getQuiz = () =>
                     run()
                 }`,
         code: ``,
-        markdown: `##### เขียน Code ด้วย JavaScript,C#,Java หรือ Python ภาษาตามที่คุณสะดวก`,
+        markdown: `##### เขียน Code ด้วย JavaScript,TypeScript,C#,Java หรือ Python ภาษาตามที่คุณสะดวก`,
       },
       {
         no: index++,
@@ -53,7 +53,7 @@ const getQuiz = () =>
         script: "",
         title: `ช่วยอธิบายในมุมมองการสร้าง Software ให้สามารถดูแลได้ในระยะยาว`,
         answer: "",
-        language: "",
+        language: "typescript",
         mermaid: ``,
         code: ``,
         markdown: `###อธิบายตามความเข้าใจ`,
@@ -75,7 +75,7 @@ const getQuiz = () =>
         script: ``,
         title: `จงเขียนโปรแกรมจากโครงสร้างตัวอย่าง โดยใช้หลักการของ Linked List ในการหาผลรวมของ value.`,
         answer: "",
-        language: "javascript",
+        language: "typescript",
         mermaid: `graph LR;
             11-->19;
             19-->32;
@@ -90,9 +90,7 @@ const getQuiz = () =>
 },          
 .........
 ]`,
-        markdown: `
-          
-        `,
+        markdown: `##### เขียน Code ด้วย JavaScript,TypeScript,C#,Java หรือ Python ภาษาตามที่คุณสะดวก`,
       },
       {
         no: index++,
@@ -100,7 +98,7 @@ const getQuiz = () =>
         script: "",
         title: `เขียนโปรแกรมเพื่อทำงานตาม Flowchart นี้เพื่อหามูลค่าของกำนัลที่ลูกค้าควรจะได้รับ และพนักงานสามารถแจ้ง มูลค่าของ Gift Voucher และ Special Offer ได้`,
         answer: "",
-        language: "javascript",
+        language: "typescript",
         mermaid: `flowchart TD
     A[Customer] -->|Pay_money as Number| B(Company Staff)
     B --> C{Calculate Price}
@@ -117,7 +115,7 @@ const getQuiz = () =>
     G -->|Special Offer| I[Result Value]
   `,
         code: ``,
-        markdown: ``,
+        markdown: `##### เขียน Code ด้วย JavaScript,TypeScript,C#,Java หรือ Python ภาษาตามที่คุณสะดวก`,
       },
       {
         no: index++,
