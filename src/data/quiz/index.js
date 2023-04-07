@@ -11,6 +11,7 @@ const getQuiz = () =>
         language: "",
         mermaid: ``,
         code: `
+                var result =  (10 / 5 + 2 * 2 - 1) % 1;
                `,
         markdown: `
                `,
