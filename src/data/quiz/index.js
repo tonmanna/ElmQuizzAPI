@@ -11,7 +11,20 @@ const getQuiz = () =>
         language: "",
         mermaid: ``,
         code: `
-                    var result =  10%5+2*2-1;
+               `,
+        markdown: `
+               `,
+      },
+      {
+        no: index++,
+        questionType: false,
+        script: "",
+        title:
+          "หากเราพิมพ์ https://www.sanook.com บน URL จะเกิดอะไรขึ้นบ้างที่ทำให้ Browsers แสดงเว็บ Sanook ขึ้นมา จงอธิบายตามความเข้าใจ",
+        answer: "",
+        language: "",
+        mermaid: ``,
+        code: `
                `,
         markdown: `
                `,
