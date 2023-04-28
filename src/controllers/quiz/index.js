@@ -1,4 +1,4 @@
-const { getQuiz, submitQuiz } = require("../../services/quiz");
+const { getQuiz, submitQuiz, getQuizTester } = require("../../services/quiz");
 const { graphQLHandler } = require("../graphql-handler");
 const { expressHandler } = require("../express-handler");
 const { validateResponseQuiz } = require("../../schema/quiz");
@@ -11,6 +11,10 @@ const getQuizHandler = async (root, args, context) => {
 };
 const getQuizExpressHandler = async (req, res) => {
   return await getQuiz();
+};
+
+const getQuizTesterExpressHandler = async (req, res) => {
+  return await getQuizTester();
 };
 
 const submitQuizExpressHandler = async (req, res) => {
@@ -45,6 +49,10 @@ const resolver = {
 const express = {
   getQuizExpress: expressHandler({
     handler: getQuizExpressHandler,
+    validator: (data) => data,
+  }),
+  getQuizTesterExpress: expressHandler({
+    handler: getQuizTesterExpressHandler,
     validator: (data) => data,
   }),
   submitQuizExpress: expressHandler({

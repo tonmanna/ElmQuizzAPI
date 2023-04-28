@@ -1,7 +1,13 @@
 const quiz = require("../../data/quiz");
+const quizTester = require("../../data/quiz/tester");
 const mail = require("../mail");
 const getQuiz = async () => {
   const result = await quiz.getQuiz();
+  return result;
+};
+
+const getQuizTester = async () => {
+  const result = await quizTester.getQuiz();
   return result;
 };
 
@@ -28,4 +34,5 @@ const submitQuiz = async (messageHtml, candidateName) => {
 module.exports = {
   getQuiz,
   submitQuiz,
+  getQuizTester,
 };
