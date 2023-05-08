@@ -110,7 +110,7 @@ const getQuiz = () =>
         no: index++,
         questionType: true,
         script: "",
-        title: `เขียนโปรแกรมเพื่อทำงานตาม Flowchart นี้เพื่อหามูลค่าของกำนัลที่ลูกค้าควรจะได้รับ และพนักงานสามารถแจ้ง มูลค่าของ Gift Voucher และ Special Offer ได้`,
+        title: `เขียนโปรแกรมเพื่อทำงานตาม Flowchart นี้เพื่อหามูลค่าของกำนัลที่ลูกค้าควรจะได้รับ และพนักงานสามารถแจ้ง มูลค่าของ Gift Voucher และ Special Offer ได้ (โดยใช้ หลักการใดหลักการหนึ่ง OOP, Functional, Procedural)`,
         answer: "",
         language: "typescript",
         mermaid: `flowchart TD
